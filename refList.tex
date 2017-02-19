@@ -1,0 +1,154 @@
+\documentclass{article}
+\usepackage[colorlinks,colorlinks,linkcolor=cyan,anchorcolor=cyan,citecolor=green,urlcolor=cyan]{hyperref}
+\usepackage[backend=bibtex, style=authoryear]{biblatex}
+\bibliography{refList}
+\title{Reference List for Deep Learning}
+\date{Last updated on \today}
+\author{Garry}
+\begin{document}
+\pagenumbering{gobble}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+% \subsection{Algorithms}
+% \begin{enumerate}
+% 	\item \href{https://arxiv.org/abs/1509.02897}{Practical and Optimal LSH for Angular Distance}\autocite{DBLP:journals/corr/AndoniILRS15}
+% \end{enumerate}
+
+\section{Deep Learning Foundations}
+\subsection{Books}
+\begin{enumerate}
+	\item \href{http://www.deeplearningbook.org/}{Deep Learning}\autocite{Goodfellow-et-al-2016} is a textbook on Deep Learning written by Ian Goodfellow, Yoshua Bengio, and Aaron Courville
+\end{enumerate}
+\subsection{Papers}
+\begin{enumerate}
+	\item \href{http://101.96.8.164/www.cs.toronto.edu/~hinton/absps/naturebp.pdf}{Learning representations by  back-propagating errors}\autocite{rumelhart1988learning}
+	\item Batch normalization: Accelerating deep network training by reducing internal covariate shift\autocite{ioffe2015batch}
+	\item Highway networks\autocite{srivastava2015highway}
+\end{enumerate}
+
+\section{Deep Learning for Images}
+\subsection{Papers}
+\begin{enumerate}
+	\item \href{https://arxiv.org/pdf/1409.1556.pdf}{Very Deep Convolutional Networks for Large-scale Image Recognition}, \textbf{VGG}\autocite{simonyan2014very}
+	\item \href{http://jmlr.org/proceedings/papers/v37/xuc15.pdf}{Show, Attend and Tell: Neural Image Caption Generation with Visual Attention}\autocite{xu2015show}
+	\item \href{https://www.cs.unc.edu/~wliu/papers/GoogLeNet.pdf}{Going deeper with convolutions}\autocite{szegedy2015going}
+	\item \href{https://arxiv.org/pdf/1512.03385v1.pdf}{Deep residual learning for image recognition}\autocite{he2015deep}
+	\item \href{http://cs.stanford.edu/people/karpathy/deepimagesent/}{Deep Visual-Semantic Alignments for Generating Image Descriptions}\autocite{karpathy2015deep}
+\end{enumerate}
+
+\section{Deep Learning for Speech/Videos}
+\subsection{Books}
+\begin{enumerate}
+	\item Automatic speech recognition: A deep learning approach\autocite{yu2014automatic}
+\end{enumerate}
+\subsection{Papers}
+\begin{enumerate}
+	\item Deep neural networks for acoustic modeling in speech recognition: The shared views of four research groups\autocite{hinton2012deep}
+\end{enumerate}
+
+
+
+\section{Deep Learning for Texts}
+\subsection{Papers}
+\begin{enumerate}
+	\item \href{http://machinelearning.wustl.edu/mlpapers/paper_files/ICML2011Sutskever_524.pdf}{Generating Text with Recurrent Neural Networks}\autocite{sutskever2011generating}
+	\item \href{https://arxiv.org/pdf/1310.4546.pdf}{Distributed representations of words and phrases and their compositionality}\autocite{mikolov2013distributed}
+	\item \href{https://arxiv.org/pdf/1301.3781.pdf}{Efficient Estimation of Word Representations in Vector Space}\autocite{mikolov2013efficient}
+	\item \href{https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/rvecs.pdf}{Linguistic Regularities in Continuous Space Word Representations}\autocite{mikolov2013linguistic}
+\end{enumerate}
+
+
+\section{Online Resources}
+\subsection{Courses}
+\begin{enumerate}
+	\item \href{http://cs231n.github.io/}{CS231n Convolutional Neural Networks for Visual Recognition}, Stanford University
+	\item \href{http://vision.princeton.edu/courses/COS429/2014fa/}{COS429 Fall 2014: Computer Vision}, Princeton
+\end{enumerate}
+
+\subsection{Tutorial/Blog/Report/Slide}
+\begin{enumerate}
+	\item \href{http://deeplearning.net/tutorial/rbm.html}{Restricted Boltzmann Machines (RBM)}, deeplearning.net
+	\item \href{http://karpathy.github.io/2015/05/21/rnn-effectiveness/}{The Unreasonable Effectiveness of Recurrent Neural Networks}, Andrej Karpathy blog
+	\item colah's blog
+	      \begin{enumerate}
+	      	\item \href{http://colah.github.io/posts/2014-07-Understanding-Convolutions/}{Understanding Convolutions}
+	      	\item \href{http://colah.github.io/posts/2014-10-Visualizing-MNIST/}{Visualizing MNIST: An Exploration of Dimensionality Reduction}
+	      	\item \href{http://colah.github.io/posts/2015-09-Visual-Information/}{Visual Information Theory}
+	      \end{enumerate}
+	\item WILDML' BLOG
+	      \begin{enumerate}
+	      	\item \href{https://www.tensorflow.org/tutorials/mnist/pros/}{Implementing a Neural Network from Scratch in Python – an Introduction}
+	      \end{enumerate}
+	\item \href{http://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf}{Learning Multiple Layers of Features from Tiny Images}, Alex Krizhevsky
+\end{enumerate}
+
+
+\section{Open source code/tools}
+\begin{enumerate}
+	\item \href{https://www.tensorflow.org/}{TensorFlow}
+	      \begin{enumerate}
+	      	\item \href{https://www.tensorflow.org/tutorials/mnist/pros/}{Deep MNIST for Experts}
+	      \end{enumerate}
+	\item \href{https://code.google.com/p/cuda-convnet/}{cuda-convnet}, \href{https://code.google.com/archive/p/cuda-convnet2/}{cuda-convnet2}
+	\item \href{https://github.com/clab/dynet}{DyNet}\autocite{dynet}
+	\item \href{http://deeplearning.net/software/theano/}{Theano}
+\end{enumerate}
+
+
+\section{Datasets}
+\subsection{Computer Vision}
+\begin{enumerate}
+	\item Wild (LFW) dataset
+	\item \href{http://www.cs.toronto.edu/~kriz/cifar.html}{The CIFAR-10 dataset}, The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. There are 50000 training images and 10000 test images.
+\end{enumerate}
+\subsection{Speech/Videos}
+\begin{enumerate}
+	\item \href{https://catalog.ldc.upenn.edu/ldc93s1}{TIMIT Acoustic-Phonetic Continuous Speech Corpus}
+\end{enumerate}
+
+
+\section{Math}
+\subsection{Probability Theory}
+\begin{enumerate}
+	\item Probability theory: The logic of science\autocite{jaynes2003probability}
+\end{enumerate}
+
+\subsection{Linear Algebra}
+\begin{enumerate}
+	\item \href{http://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf}{The Matrix Book},\autocite{petersen2008matrix}
+	\item Linear Algebra. Revised English Ed. Trs. RA Silverman\autocite{shilov1971linear}
+	\item \href{http://math.mit.edu/~gs/linearalgebra/}{Introduction to Linear Algebra, Fifth Edition (2016)}
+\end{enumerate}
+
+
+\section{Programming}
+\subsection{C/C++}
+\begin{enumerate}
+	\item \href{http://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list}{The Definitive C++ Book Guide and List}
+	\item \href{https://github.com/onqtam/awesome-cmake}{CMake official documentation}
+\end{enumerate}
+\subsection{Python}
+\begin{enumerate}
+	\item \href{https://docs.scipy.org/doc/numpy-dev/user/quickstart.html}{SciPy: Quickstart tutorial}
+\end{enumerate}
+
+
+\section{Active Researchers}
+\href{http://deeplearning.net/deep-learning-research-groups-and-labs/}{Deep Learning Research Groups}
+\begin{enumerate}
+	\item \href{http://www.cs.toronto.edu/~kriz/}{homepage}, Alex Krizhevsky
+	\item \href{http://www.cs.cmu.edu/~hzhang/}{Homepage}, Hui Zhang, CMU
+\end{enumerate}
+
+
+\section{Research and Writing}
+\href{http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mleone/web/how-to.html}{Advice on Research and Writing}:A collection of advice about how to do research and how to communicate effectively (primarily for computer scientists).
+
+
+\newpage
+\printbibliography
+\end{document}
